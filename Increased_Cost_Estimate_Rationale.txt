@@ -1,0 +1,2 @@
+With the new budget of 20k the numbers of processor and memory was increase, 
+and also the number of instances was increased to add redundancy.

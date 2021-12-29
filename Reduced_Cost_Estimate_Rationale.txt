@@ -1,0 +1,3 @@
+With the budget reduction the processing power of Web Servers and Application Servers
+was reduced and alse the memory, but increasing the number of instances.
+To get a better value of instances we choose a reservation of 3 years of this instances. 
