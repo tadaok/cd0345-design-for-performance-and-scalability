@@ -1,9 +1,8 @@
 # TODO: Designate a cloud provider, region, and credentials
 provider "aws" {
-  region     = "<replace by your region>"
-  access_key = "<replace by your access_key>"
-  secret_key = "<replace by your secret_key>"
-  token = "<replace by your token>"
+  shared_credentials_file = "~/.aws/credentials"
+  profile                 = "default"
+  region                  = "us-east-1"
 }
 
 # TODO: provision 4 AWS t2.micro EC2 instances named Udacity T2
@@ -13,7 +12,7 @@ resource "aws_instance" "Udacity_T2" {
   instance_type = "t2.micro"
   subnet_id = "subnet-0ba07c2f2b1c3ea5c"
   tags = {
-      name = "Udacity T2"
+      Name = "Udacity T2"
   }
 }
 
@@ -24,6 +23,6 @@ resource "aws_instance" "Udacity_M4" {
   instance_type = "m4.large"
   subnet_id = "subnet-0ba07c2f2b1c3ea5c"
   tags = {
-      name = "Udacity M4"
+      Name = "Udacity M4"
   }
 }

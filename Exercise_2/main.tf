@@ -1,8 +1,7 @@
 provider "aws" {
-  region     = var.region
-  access_key = var.access_key
-  secret_key = var.secret_key
-  token      = var.token
+  shared_credentials_file = "~/.aws/credentials"
+  profile                 = "default"
+  region                  = var.aws_region
 }
 
 #ZIP
@@ -16,7 +15,7 @@ data "archive_file" "lambda_function" {
 resource "aws_lambda_function" "greeting" {
   filename      = "lambda.zip"
   function_name = var.lambda_function_name
-  role          = aws_iam_role.iam_for_greeting_lambda.arn
+  role          = aws_iam_role.iam_for_greeting_lambda3.arn
   handler       = "greet_lambda.lambda_handler"
   runtime       = "python3.8"
 
@@ -33,8 +32,8 @@ resource "aws_lambda_function" "greeting" {
 }
 
 
-resource "aws_iam_role" "iam_for_greeting_lambda" {
-  name = "iam_for_greeting_lambda"
+resource "aws_iam_role" "iam_for_greeting_lambda3" {
+  name = "iam_for_greeting_lambda3"
 
   assume_role_policy = <<EOF
 {
@@ -82,6 +81,6 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
-  role       = aws_iam_role.iam_for_greeting_lambda.name
+  role       = aws_iam_role.iam_for_greeting_lambda3.name
   policy_arn = aws_iam_policy.lambda_logging.arn
 }

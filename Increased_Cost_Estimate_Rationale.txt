@@ -1,2 +1,2 @@
-With the new budget of 20k the numbers of processor and memory was increase, 
-and also the number of instances was increased to add redundancy.
+With the new budget of 20k we increase the instance numbers to add more redundancy and also add more processor power and memory to each intance in order to increase the performance.
+The RDS servers also get a increase o processors and memory.

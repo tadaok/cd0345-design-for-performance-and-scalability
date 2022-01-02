@@ -1,11 +1,13 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,493.65,5923.80,USD,Number of NAT Gateways (1)
-My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2763.6,33163.20,USD,"Data transfer out to internet (30 TB per month), Number of requests (HTTPS) (50 million per month), Data transfer out to origin (10 TB per month)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,327.46,3929.52,USD,S3 Standard storage (10 TB per month)
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (200 GB per month), DT Outbound: Amazon CloudFront (1 TB per month)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,1501.08,18012.96,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m1.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2763.6,33163.20,USD,"Data transfer out to internet (30 TB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to origin (10 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,327.68,3932.16,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (200 TB per month), DT Outbound: Amazon CloudFront (1 TB per month), DT Intra-Region: (0 TB per month), Data transfer cost (0)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,717.6,8611.20,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
 My Estimate,US East (N. Virginia),,Application Load Balancer,0,500.05,6000.60,USD,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),,Amazon EC2,0,911.16,10933.92,USD,"Operating system (Linux), Quantity (7), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (r6g.2xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,1187.1,14245.20,USD,"Operating system (Linux), Quantity (7), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (30 GB), Instance type (x2gd.2xlarge)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0.00,USD,"Number of EC2 instances (5), Number of EIPs per instance (1)"
 
 
 

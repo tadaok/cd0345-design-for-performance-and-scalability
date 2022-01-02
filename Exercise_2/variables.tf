@@ -1,24 +1,8 @@
 # TODO: Define the variable for aws_region
-variable "region" {
+variable "aws_region" {
      type = string
-     description = "aws region"
-     default = "<replace by your region>"
-}
-variable "access_key" {
-    type = string
-    description = "aws access key"
-    default = "<replace by your access_key>"
-}
-variable "secret_key" {
-    type = string
-    description = "aws secret key"
-    default = "<replace by your secrect_key>"
-}
-
-variable "token"  {
-    type = string
-    description = "aws temporary token"
-    default = "<replace by your token>"
+     description = "AWS region"
+     default = "us-east-1"
 }
 
 variable "lambda_function_name" {
